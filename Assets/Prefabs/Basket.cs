@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Basket : MonoBehaviour
 {
+    private void Start()
+    {
+        
+    }
 
     void Update()
     {
@@ -27,5 +31,16 @@ public class Basket : MonoBehaviour
 
         this.transform.position = pos;
         
+    }
+
+    void OnCollisionEnter(Collision coll)
+    {
+        //Find out what hit this basket.
+        GameObject collidedWith = coll.gameObject;
+
+        if (collidedWith.tag == "Apple")
+        {
+            Destroy(collidedWith);
+        }
     }
 }

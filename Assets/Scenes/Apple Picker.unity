@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23749093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2088567402908553358, guid: 6db95d5911a442945957f70e1cef349b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7331277035148363299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &569004773
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +140,7 @@ GameObject:
   - component: {fileID: 569004776}
   - component: {fileID: 569004775}
   - component: {fileID: 569004774}
+  - component: {fileID: 569004777}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +213,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569004777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569004773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd908c4ebbb47bd48b65f843f0dc90f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 23749093}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1 &919691877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6595839169251997471, guid: b74a03abb5beb1e49b88ece423dde41c,
@@ -371,6 +394,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 6595839169251997471, guid: b74a03abb5beb1e49b88ece423dde41c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b74a03abb5beb1e49b88ece423dde41c, type: 3}
 --- !u!1001 &7054844899529298593
@@ -478,6 +506,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088567402908553358, guid: 6db95d5911a442945957f70e1cef349b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3939003989940380846, guid: 6db95d5911a442945957f70e1cef349b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8118057305120320825, guid: 6db95d5911a442945957f70e1cef349b,
         type: 3}
