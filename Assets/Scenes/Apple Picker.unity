@@ -206,6 +206,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &919691877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6595839169251997471, guid: b74a03abb5beb1e49b88ece423dde41c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6595839168332305786}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1602521766
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +394,16 @@ PrefabInstance:
         type: 3}
       propertyPath: chanceToChangeDirections
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -9155756562942216819, guid: 4806faaed2569f64599ccfee2a4be334,
+        type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 919691877}
+    - target: {fileID: 4045414346413211484, guid: 4806faaed2569f64599ccfee2a4be334,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054844899294007696, guid: 4806faaed2569f64599ccfee2a4be334,
         type: 3}
